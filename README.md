@@ -1,5 +1,5 @@
-# hyperledger-setup
-Step by step guide to setup hyperledger fabric first-network in ubuntu 16.04
+# Hyperledger Setup on Mulit Node/Host
+Step by step guide to setup hyperledger fabric with multi-node/multi-host  in Ubuntu 16.04
 
 # Scope
 Install & configure pre-requisites, software and deploy the sample fabric-network/first-network in the environment and test the setup using the CLI.
@@ -7,7 +7,7 @@ Install & configure pre-requisites, software and deploy the sample fabric-networ
 ### Important points before starting the installation
 
 1. Docker installation and configuration can be skipped if you have docker installed.
-2. User permissions and user accounts are not covered. Do not use root user!
+2. Do not use root user!
 3. Do not change folder and file permissions unless otherwise specified
 4. Ubuntu installation is not covered.
 
