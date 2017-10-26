@@ -4,24 +4,20 @@ Step by step guide to setup hyperledger fabric first-network in ubuntu 16.04
 # Scope
 Install & configure pre-requisites, softwares and deploy the sample fabric-network/first-network in the environment and test the setup using the cli.
 
-# Important point before starting the installation
+## Important point before starting the installation
 
 1. Docker installation and configuration is not covered.
 2. User permissions and user accounts are not covered.
 3. Folder and file permissions are not covered.
 4. Ubuntu installation is not covered.
 
-#Starting with pre-requisites.
+##Starting with pre-requisites.
 
-
-1  sudo ls -la /root
-2  exit
-3  pwd
-4  ls
-
-List docker services installed and running
+###List docker services installed and running
+```
 netstat -an | grep docker
 
+```
 Stop the docker service
 sudo service docker stop
 
@@ -60,7 +56,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 4. Use the following command to set up the stable repository
 
-#amd64
+###amd64
   sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
@@ -79,7 +75,7 @@ sudo apt-get install docker-ce
 
 sudo docker run hello-world
 
-#Post install Steps for docker
+##Post install Steps for docker
 1. Create the docker group.
 
 sudo groupadd docker
@@ -94,7 +90,7 @@ docker run hello-world
 
 
 
-#Install Fabric sample
+##Install Fabric sample
 git clone https://github.com/hyperledger/fabric-samples.git
 
 cd farbric-samples
@@ -103,5 +99,7 @@ sudo curl -sSL https://goo.gl/Q3YRTi | bash
 
 cd first-network
 
-Export Path
+##Export Path
 export  PATH=./:../bin:$PATH
+
+##Running the byfn.sh (Building Your First Network script)
