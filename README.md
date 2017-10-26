@@ -78,3 +78,30 @@ sudo apt-get install docker-ce
 3. Verify that Docker CE is installed correctly by running the hello-world image
 
 sudo docker run hello-world
+
+#Post install Steps for docker
+1. Create the docker group.
+
+sudo groupadd docker
+
+2. Add your user to the docker group.
+
+sudo usermod -aG docker $USER
+
+3. Verify that you can run docker commands without sudo
+
+docker run hello-world
+
+
+
+#Install Fabric sample
+git clone https://github.com/hyperledger/fabric-samples.git
+
+cd farbric-samples
+
+sudo curl -sSL https://goo.gl/Q3YRTi | bash
+
+cd first-network
+
+Export Path
+export  PATH=./:../bin:$PATH
