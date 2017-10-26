@@ -7,7 +7,7 @@ Install & configure pre-requisites, software and deploy the sample fabric-networ
 ### Important points before starting the installation
 
 1. Docker installation and configuration can be skipped if you have docker installed.
-2. Do not use root user!
+2. Do not use ** root ** user!
 3. Do not change folder and file permissions unless otherwise specified
 4. Ubuntu installation is not covered.
 
