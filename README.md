@@ -6,7 +6,7 @@ Install & configure pre-requisites, softwares and deploy the sample fabric-netwo
 
 ## Important point before starting the installation
 
-1. Docker installation and configuration is not covered.
+1. Docker installation and configuration can be skipped if you have docker installed.
 2. User permissions and user accounts are not covered.
 3. Folder and file permissions are not covered.
 4. Ubuntu installation is not covered.
@@ -84,7 +84,7 @@ sudo apt-get install docker-ce
 ```
 sudo docker run hello-world
 ```
-## Post install Steps for docker
+### Post install Steps for docker
 
 1. Create the docker group.
 ```
@@ -99,6 +99,14 @@ sudo usermod -aG docker $USER
 3. Verify that you can run docker commands without sudo
 ```
 docker run hello-world
+```
+
+## Create the following folder structure
+```
+mkdir -p go/src/github.com/hyperledger
+mkdir -p go/src/github.com/<< github id >> //Substibute your github id hyper
+mkdir -p go/bin
+mkdir -p go/pkg
 ```
 
 ## Install Fabric sample
@@ -116,4 +124,13 @@ cd first-network
 ```
 export  PATH=./:../bin:$PATH
 ```
-##Running the byfn.sh (Building Your First Network script)
+## Running the byfn.sh (Building Your First Network script)
+```
+cd go/src/github.com/hyperledger/fabric-samples/first-network
+./byfn.sh -m up
+```
+## Once you see the my-network deployed and the chain code run successfully, issue the following command
+```
+./byfn.sh -m down
+
+```
