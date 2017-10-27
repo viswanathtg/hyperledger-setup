@@ -109,6 +109,15 @@ mkdir -p go/bin
 mkdir -p go/pkg
 ```
 
+## Install go using the following instructions
+
+https://golang.org/doc/install#install
+
+## Run the hello world program to test the go installation.
+
+https://golang.org/doc/install#testing
+
+
 ## Install Fabric sample
 ```
 git clone https://github.com/hyperledger/fabric-samples.git
