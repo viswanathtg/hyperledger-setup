@@ -134,4 +134,10 @@ cd go/src/github.com/hyperledger/fabric-samples/first-network
 ./byfn.sh -m down
 
 ```
+
+#Configuring the Multi-host setup
+
+In progress...
+
+
 # Conclusion
