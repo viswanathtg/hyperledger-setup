@@ -104,7 +104,7 @@ docker run hello-world
 ## Create the following folder structure
 ```
 mkdir -p go/src/github.com/hyperledger
-mkdir -p go/src/github.com/<< github id >> //Substibute your github id hyper
+mkdir -p go/src/github.com/<< github id >> //Substitute your github id here
 mkdir -p go/bin
 mkdir -p go/pkg
 ```
