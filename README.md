@@ -135,7 +135,7 @@ cd go/src/github.com/hyperledger/fabric-samples/first-network
 
 ```
 
-#Configuring the Multi-host setup
+# Configuring the Multi-host setup
 
 In progress...
 
